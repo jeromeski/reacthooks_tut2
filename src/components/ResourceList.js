@@ -18,9 +18,9 @@ const ResourceList = ({ resource }) => {
   }, [resource]);
 
   return (
-    <div>
-      <p>{resources.length}</p>
-    </div>
+
+      <ul>{resources.map(record => <li key={record.id}>{record.title}</li>)}</ul>
+
   );
 };
 
